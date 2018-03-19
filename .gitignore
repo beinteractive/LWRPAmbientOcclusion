@@ -1,0 +1,17 @@
+.DS_Store
+
+/Library
+/Temp
+/Movies
+
+/Assets/Plugins*
+/Assets/Plugins/Editor/JetBrains*
+/Obsolete
+
+.idea
+*.sln
+*.csproj
+obj
+
+GeneratedShader.shader
+UberShader.shader
