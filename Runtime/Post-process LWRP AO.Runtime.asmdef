@@ -1,0 +1,7 @@
+﻿{
+	"name": "Post-processLWRPAO",
+	"references": [
+			"com.unity.render-pipelines.core.Runtime",
+			"com.unity.postprocessing.Runtime"
+	]
+}
