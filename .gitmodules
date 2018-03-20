@@ -1,0 +1,3 @@
+[submodule "Packages/jp.keijiro.ffmpegout"]
+	path = Packages/jp.keijiro.ffmpegout
+	url = git@github.com:beinteractive/jp.keijiro.ffmpegout.git
