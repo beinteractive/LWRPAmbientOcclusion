@@ -3,6 +3,7 @@
 /Library
 /Temp
 /Movies
+/Build
 
 /Assets/Plugins*
 /Assets/Plugins/Editor/JetBrains*
