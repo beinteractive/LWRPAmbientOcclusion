@@ -14,7 +14,8 @@ MonoBehaviour:
   settings:
   - {fileID: 114298231876092106}
   - {fileID: 114263866692197818}
-  - {fileID: 114632464966306132}
+  - {fileID: 114676672515457720}
+  - {fileID: 114465254252225856}
 --- !u!114 &114263866692197818
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -105,7 +106,22 @@ MonoBehaviour:
   quality:
     overrideState: 0
     value: 2
---- !u!114 &114632464966306132
+--- !u!114 &114465254252225856
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6978032d3ee49e8ac82fdb8eb5634b, type: 3}
+  m_Name: PostProcessingCameraCapture
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+--- !u!114 &114676672515457720
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}

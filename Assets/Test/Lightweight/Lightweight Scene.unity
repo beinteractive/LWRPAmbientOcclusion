@@ -4936,11 +4936,11 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 0.611
-    m_Bias: 0.45
+    m_Bias: 0.15
     m_NormalBias: 0.1
     m_NearPlane: 5
   m_Cookie: {fileID: 0}
