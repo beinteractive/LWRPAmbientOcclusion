@@ -143,6 +143,11 @@ public class LWRPAORenderer : PostProcessEffectRenderer<LWRPAO>
                 GenerateAOMapMethod.Invoke(aoMethod, new object[] {cmd, cam, AmbientOnlyAOIdentifier, null, false, false});
                 PushDebug(ctx);
                 cmd.SetGlobalTexture(ShaderIDsMSVOcclusionTexture, AmbientOnlyAO);
+                
+                #if !UNITY_EDITOR && UNITY_IOS
+                cmd.BlitFullscreenTriangle(ctx.source, ctx.destination);
+                #endif
+                
                 cmd.BlitFullscreenTriangle(BuiltinRenderTextureType.None, ctx.destination, PropertySheet, (int)Pass.CompositionForward);
                 cmd.EndSample("Ambient Occlusion");
             }
