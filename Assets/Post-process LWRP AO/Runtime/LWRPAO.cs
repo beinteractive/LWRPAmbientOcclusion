@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.PostProcessing;
 
 [Serializable]
-[PostProcess(typeof(LWRPAORenderer), PostProcessEvent.BeforeTransparent, "Custom/LWRP Ambient Occlusion")]
+[PostProcess(typeof(LWRPAORenderer), PostProcessEvent.BeforeStack, "Custom/LWRP Ambient Occlusion")]
 public sealed class LWRPAO : PostProcessEffectSettings
 {
 }
@@ -144,9 +144,7 @@ public class LWRPAORenderer : PostProcessEffectRenderer<LWRPAO>
                 PushDebug(ctx);
                 cmd.SetGlobalTexture(ShaderIDsMSVOcclusionTexture, AmbientOnlyAO);
                 
-                #if !UNITY_EDITOR && UNITY_IOS
                 cmd.BlitFullscreenTriangle(ctx.source, ctx.destination);
-                #endif
                 
                 cmd.BlitFullscreenTriangle(BuiltinRenderTextureType.None, ctx.destination, PropertySheet, (int)Pass.CompositionForward);
                 cmd.EndSample("Ambient Occlusion");
