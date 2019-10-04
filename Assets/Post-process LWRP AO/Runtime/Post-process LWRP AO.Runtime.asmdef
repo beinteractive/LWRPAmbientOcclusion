@@ -1,7 +1,15 @@
-﻿{
-	"name": "Post-processLWRPAO",
-	"references": [
-			"com.unity.render-pipelines.core.Runtime",
-			"com.unity.postprocessing.Runtime"
-	]
+{
+    "name": "Post-processLWRPAO",
+    "references": [
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.Postprocessing.Runtime"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
 }
